@@ -10,11 +10,13 @@ public class Customer {
         name = "";
         userName = "";
         password = "";
+        bill = 0;
     }
     public Customer(String name, String userName, String password, double bill) {
         this.name = name;
         this.userName = userName;
         this.password = password;
+        this.bill = bill;
     }
 
     // Getter & Setter
