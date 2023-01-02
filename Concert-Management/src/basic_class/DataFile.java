@@ -19,9 +19,6 @@ public class DataFile {
     // List to be added from files
     public static ArrayList<Concert> concertList = new ArrayList<>();
     public static ArrayList<Band> bandList = new ArrayList<>();
-    //public static ArrayList<Customer> customerList = new ArrayList<>();
- 
-    //customerList.add(new Customer(name, username, pass))
 
     // Reading from Band_Details.txt file and updating List
     public static void takeInputBandDetails() throws FileNotFoundException{
@@ -153,12 +150,13 @@ public class DataFile {
     // get popular band details
     public static String getPopularBandDetails() throws FileNotFoundException {
         read = new Scanner(popularBandDetailsFile);
+        String name;
 
-        String output = "===== Popular Bands =====\n";
+        String output = "===== Popular Bands ===== \n";
         
-        while (read.hasNextLine()){
-            s = read.nextLine();
-            output += s;
+        for (int i = 0; i < 5; i++){
+            name = read.next();
+            output += name + "\n";
         }
 
         return output;

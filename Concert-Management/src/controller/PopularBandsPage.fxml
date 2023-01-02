@@ -13,7 +13,7 @@
             <Font size="48.0" />
          </font>
       </Text>
-      <TextArea fx:id="textOutputArea" layoutX="41.0" layoutY="139.0" prefHeight="309.0" prefWidth="616.0" />
+      <TextArea fx:id="textArea" layoutX="41.0" layoutY="139.0" prefHeight="309.0" prefWidth="616.0" />
       <Button fx:id="backButton" layoutX="323.0" layoutY="461.0" mnemonicParsing="false" onAction="#pressedBackButton" text="Back" />
       <Button fx:id="showPopularBandsButton" layoutX="198.0" layoutY="103.0" mnemonicParsing="false" onAction="#pressedShowPopularBandsButton" prefHeight="26.0" prefWidth="304.0" text="Show Popular Bands" />
    </children>

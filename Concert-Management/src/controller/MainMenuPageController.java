@@ -9,8 +9,6 @@ import javafx.scene.Parent;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class MainMenuPageController {
@@ -21,9 +19,6 @@ public class MainMenuPageController {
     @FXML private Button downloadMyTiicketButton;
     @FXML private Button searchBandButton;
     @FXML private Button managementButton;
-
-    // Image icon = new Image("../resources/icon.jpg");
-    // stage.getIcons().add(icon);
 
     @FXML
     void pressedSearchBandButton(ActionEvent event) throws IOException {
