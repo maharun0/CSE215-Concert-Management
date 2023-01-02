@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementController">
    <children>
-      <Button fx:id="SaleRecordsButton" layoutX="224.0" layoutY="187.0" mnemonicParsing="false" onAction="#PressedSaleRecordsButton" prefHeight="74.0" prefWidth="251.0" text="Sale Records" />
+      <Button fx:id="PurchaseHistoryButton" layoutX="224.0" layoutY="187.0" mnemonicParsing="false" onAction="#PressedPurchaseHistoryButton" prefHeight="74.0" prefWidth="251.0" text="Purchase History" />
       <Button fx:id="popularBandsButton" layoutX="224.0" layoutY="289.0" mnemonicParsing="false" onAction="#pressedPopularBandsButton" prefHeight="74.0" prefWidth="251.0" text="Popular Bands" />
       <Button fx:id="BackButton" layoutX="296.0" layoutY="429.0" mnemonicParsing="false" onAction="#pressedBackButton" prefHeight="26.0" prefWidth="107.0" text="Back" />
       <Text fx:id="titleText" layoutX="272.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Management" textAlignment="CENTER" wrappingWidth="154.587890625">

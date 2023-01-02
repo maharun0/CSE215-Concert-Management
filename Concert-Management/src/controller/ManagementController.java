@@ -18,15 +18,26 @@ public class ManagementController {
     @FXML private Button SaleRecordsButton;
     @FXML private Button popularBandsButton;
     @FXML private Text titleText;
+    @FXML private Button PurchaseHistoryButton;
 
     @FXML
-    void PressedSaleRecordsButton(ActionEvent event) {
-        
+    void PressedPurchaseHistoryButton(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../controller/PurchaseHistoryPage.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Search Band");
+        stage.show();
     }
 
     @FXML
-    void pressedPopularBandsButton(ActionEvent event) {
-
+    void pressedPopularBandsButton(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../controller/PopularBandsPage.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.setTitle("Search Band");
+        stage.show();
     }
 
     @FXML
