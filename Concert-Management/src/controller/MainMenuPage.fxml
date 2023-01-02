@@ -5,7 +5,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuPageController">
    <children>
       <Text layoutX="229.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Menu">
@@ -18,6 +17,9 @@
       <Button fx:id="showMyTicketButton" layoutX="177.0" layoutY="241.0" mnemonicParsing="false" onAction="#pressedShowMyTicketButton" prefHeight="50.0" prefWidth="135.0" text="Show my ticket" />
       <Button fx:id="downloadMyTiicketButton" layoutX="358.0" layoutY="241.0" mnemonicParsing="false" onAction="#pressedDownloadMyTicketButton" prefHeight="50.0" prefWidth="135.0" text="Download my ticket" />
       <Button fx:id="searchBandButton" layoutX="423.0" layoutY="169.0" mnemonicParsing="false" onAction="#pressedSearchBandButton" prefHeight="50.0" prefWidth="135.0" text="Search Band" />
-      <Button fx:id="managementButton" layoutX="230.0" layoutY="346.0" mnemonicParsing="false" onAction="#pressedManagementButton" prefHeight="64.0" prefWidth="196.0" text="Management" />
+      <Button fx:id="managementButton" layoutX="230.0" layoutY="346.0" mnemonicParsing="false" onAction="#pressedManagementButton" prefHeight="64.0" prefWidth="196.0" text="Management">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
    </children>
 </AnchorPane>
