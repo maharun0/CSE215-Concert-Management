@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="MainMenuController">
+   <children>
+      <Button layoutX="57.0" layoutY="66.0" mnemonicParsing="false" onAction="#Buy_ticket" prefHeight="100.0" prefWidth="134.0" text="Buy Ticket">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="392.0" layoutY="66.0" mnemonicParsing="false" onAction="#band_list" prefHeight="100.0" prefWidth="134.0" text="Band List">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="223.0" layoutY="66.0" mnemonicParsing="false" onAction="#show_ticket" prefHeight="100.0" prefWidth="134.0" text="Show Ticket ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="57.0" layoutY="217.0" mnemonicParsing="false" onAction="#seatch_band" prefHeight="100.0" prefWidth="134.0" text="Search Band ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="233.0" layoutY="217.0" mnemonicParsing="false" onAction="#management" prefHeight="100.0" prefWidth="134.0" text="Management">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="329.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BuyTicketController">
+   <children>
+      <Label layoutX="73.0" layoutY="71.0" prefHeight="28.0" prefWidth="66.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="170.0" layoutY="73.0" promptText="name" />
+      <Label layoutX="73.0" layoutY="117.0" prefHeight="28.0" prefWidth="66.0" text="Gender">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="gnd" layoutX="170.0" layoutY="119.0" promptText="male/female" />
+      <Label layoutX="73.0" layoutY="14.0" prefHeight="32.0" prefWidth="307.0" text="Concert Ticket Price :: BDT 200">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="164.0" prefHeight="28.0" prefWidth="66.0" text="Email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mail" layoutX="170.0" layoutY="166.0" promptText="\@email.com" />
+      <Label layoutX="20.0" layoutY="262.0" prefHeight="44.0" prefWidth="471.0" text="Caution : Once your click &quot;Buy: you can not cancel the purchase" textFill="#b22407">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="183.0" layoutY="211.0" mnemonicParsing="false" onAction="#Ticket_Buy" prefHeight="38.0" prefWidth="111.0" text="Buy" textFill="#0a0909">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
