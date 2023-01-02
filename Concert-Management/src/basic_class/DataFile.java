@@ -10,11 +10,11 @@ public class DataFile {
     static Scanner read;
     static String s;
 
-    // Files
-    // public final static File purchaseHistoryFile = new File("src/textfiles/Purchase_History.txt");
-    // public final static File userInfoFileFile = new File("src/textfiles/User_Info.txt");
-    public final static File BandDetailsFile = new File("C:\\Users\\Neko\\Desktop\\Github_Open\\Concert-Management\\Concert-Management\\src\\textfiles\\Band_Details.txt");
-    public final static File ConcertDetailsFile = new File("C:\\Users\\Neko\\Desktop\\Github_Open\\Concert-Management\\Concert-Management\\src\\Concert_Details.txt");
+    // Files                                                       
+    public final static File purchaseHistoryFile = new File("src/textfiles/Purchase_History.txt");
+    public final static File BandDetailsFile = new File("src/textfiles/Band_Details.txt");
+    public final static File ConcertDetailsFile = new File("src/textfiles/Concert_Details.txt");
+    public final static File popularBandDetailsFile = new File("src/textfiles/Popular_Band_Details.txt");
 
     // List to be added from files
     public static ArrayList<Concert> concertList = new ArrayList<>();
@@ -52,7 +52,7 @@ public class DataFile {
         double ticketPrice;
 
         //Band band, String place, String timing, double ticketPrice
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < 5; i++){
             s = read.next();
             for (Band b : bandList){
                 if (s.equals(b.getName())){
@@ -98,7 +98,7 @@ public class DataFile {
         for (Concert c : concertList) {
             if (s.toLowerCase().equals(c.getBand().getName().toLowerCase())) {
                 if (count == 0)
-                    output += "Available concerts:";
+                    output += "Available concerts:\n";
                 output += c.getBand().getName();
                 count++;
             }
@@ -119,7 +119,7 @@ public class DataFile {
             for (String m : b.getMembers()){
                 if (m.toLowerCase().equals(s.toLowerCase())) {
                     if (count == 0)
-                        output += "Available band with this member:\n";
+                        output += "Available bands with this member:\n";
                     output += b.getName() + "\n";
                     count++;
                 }
@@ -132,4 +132,37 @@ public class DataFile {
         }
         return output;
     }
+
+    // get Puchase History
+    public static String getPurchaseHistory() throws FileNotFoundException{
+        read = new Scanner(purchaseHistoryFile);
+        String name;
+        double price;
+
+        String output = "===== Purchase History ===== \n";
+        while (read.hasNextLine()){
+            name = read.next();
+            price = read.nextDouble();
+
+            output += name + " ============== " + price + " taka\n";
+        }
+
+        return output;
+    }
+
+    // get popular band details
+    public static String getPopularBandDetails() throws FileNotFoundException {
+        read = new Scanner(popularBandDetailsFile);
+
+        String output = "===== Popular Bands =====\n";
+        
+        while (read.hasNextLine()){
+            s = read.nextLine();
+            output += s;
+        }
+
+        return output;
+    }
 }
+
+    

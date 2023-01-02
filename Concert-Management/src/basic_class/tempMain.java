@@ -8,7 +8,7 @@ import javafx.fxml.FXMLLoader;
 import java.io.*;
 
 
-public class Main extends Application {
+public class tempMain extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         // Taking input from file
@@ -22,12 +22,11 @@ public class Main extends Application {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        //Parent root = FXMLLoader.load(getClass().getResource("RegistrationPage.fxml"));
-        // Parent root = FXMLLoader.load(getClass().getResource("../controller/SearchBandPage.fxml"));
+
         Parent root = FXMLLoader.load(getClass().getResource("../controller/MainMenuPage.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Concert-Management");
+        primaryStage.setTitle("Main Menu");
         primaryStage.show();
     }
 
