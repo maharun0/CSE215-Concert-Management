@@ -8,7 +8,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchPage
+Controller">
    <children>
       <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="buttonBack" layoutX="315.0" layoutY="455.0" mnemonicParsing="false" onAction="#pressedButtonBack" prefHeight="26.0" prefWidth="70.0" text="Back" />
