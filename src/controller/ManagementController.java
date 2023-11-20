@@ -26,7 +26,7 @@ public class ManagementController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Search Band");
+        stage.setTitle("Purchase History");
         stage.show();
     }
 
@@ -36,7 +36,7 @@ public class ManagementController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Search Band");
+        stage.setTitle("Popular Bands");
         stage.show();
     }
 
@@ -46,7 +46,7 @@ public class ManagementController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Search Band");
+        stage.setTitle("Main Menu");
         stage.show();
     }
 }

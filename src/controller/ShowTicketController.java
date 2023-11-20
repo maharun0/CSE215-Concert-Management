@@ -2,6 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
+package controller;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -22,7 +23,7 @@ import javafx.scene.control.Label;
 public class ShowTicketController implements Initializable {
 
     @FXML
-    private Label name;
+    private Label naem;
     @FXML
     private Label Gender;
     @FXML
@@ -33,17 +34,17 @@ public class ShowTicketController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        String name,gen,mail;
+        String n,gen,mail;
         try{
-            File fr = new File("C:/Users/USER/Documents/NetBeansProjects/Concet Management System/Buy.txt");
+            File fr = new File("src/textfiles/Buy.txt");
             Scanner scan = new Scanner(fr);
             
             while(scan.hasNext()){
-                name = scan.nextLine();
+                n = scan.nextLine();
                 gen = scan.next();
                 mail = scan.next();
                 
-                name.setText(name);
+                naem.setText(n);
                 Gender.setText(gen);
                 email.setText(mail);
                 
@@ -52,7 +53,6 @@ public class ShowTicketController implements Initializable {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(ShowTicketController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        // TODO
     }    
     
 }
